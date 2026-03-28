@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --font-nunito-sans: "Nunito Sans", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+}
+
+@theme inline {
+  --font-nunito: var(--font-nunito-sans);
+  --font-dm: var(--font-dm-sans);
+  --font-sans: var(--font-nunito-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: #F9F9F9;
+  --color-neutral-grey: #BBBBBB;
+  --color-generic-black: #111;
+  --color-neutral-800: #606060;
+  --color-accent: #771E42;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-nunito-sans), Arial, Helvetica, sans-serif;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.4s;
+}
