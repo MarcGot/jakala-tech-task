@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { useTransition } from 'react';
-import { Search, Loader2 } from 'lucide-react';
-import { useDebouncedCallback } from 'use-debounce';
-import {QueryManager} from "@/utils/query-manager";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { useTransition } from "react";
+import { Search, Loader2 } from "lucide-react";
+import { useDebouncedCallback } from "use-debounce";
+import { QueryManager } from "@/utils/query-manager";
 
 function SearchBar() {
     const searchParams = useSearchParams();
@@ -23,15 +23,11 @@ function SearchBar() {
                 type="text"
                 placeholder="Busca en nuestra tienda"
                 onChange={(e) => handleSearch(e.target.value)}
-                defaultValue={searchParams.get('search')?.toString()}
-                className="w-full pl-10 pr-4 py-2 rounded-md outline-none border-neutral-grey border bg-white"
+                defaultValue={searchParams.get("search")?.toString()}
+                className="border-neutral-grey w-full rounded-md border bg-white py-2 pr-4 pl-10 outline-none"
             />
-            <div className="absolute left-3 top-2.5 text-gray-400">
-                {isPending ? (
-                    <Loader2 className="animate-spin h-5 w-5" />
-                ) : (
-                    <Search className="h-5 w-5" />
-                )}
+            <div className="absolute top-2.5 left-3 text-gray-400">
+                {isPending ? <Loader2 className="h-5 w-5 animate-spin" /> : <Search className="h-5 w-5" />}
             </div>
         </div>
     );

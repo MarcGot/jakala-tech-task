@@ -1,21 +1,22 @@
 import { getProductById } from "@/libs/api";
-import {Flower} from "@/types/flower";
+import { Flower } from "@/types/flower";
 import FlowerSection from "@/containers/product-page/flower-section";
 import {
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
-    BreadcrumbList, BreadcrumbPage,
-    BreadcrumbSeparator
+    BreadcrumbList,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
 } from "@/components/ui/Breadcrumb/BreadCrumb";
-import { Link } from 'next-view-transitions';
+import { Link } from "next-view-transitions";
 
 export default async function FlowerPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
-    const flower:Flower = await getProductById(id);
+    const flower: Flower = await getProductById(id);
 
     return (
-        <main className="max-w-4xl mx-auto p-6 flex flex-col gap-4">
+        <main className="mx-auto flex max-w-4xl flex-col gap-4 p-6">
             <Breadcrumb>
                 <BreadcrumbList>
                     <BreadcrumbItem>
@@ -31,5 +32,5 @@ export default async function FlowerPage({ params }: { params: Promise<{ id: str
             </Breadcrumb>
             <FlowerSection flower={flower} id={id} />
         </main>
-    )
+    );
 }
