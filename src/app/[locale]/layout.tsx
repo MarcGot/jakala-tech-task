@@ -3,7 +3,7 @@ import "../../styles/globals.css";
 import { dmSans, nunitoSans } from "@/libs/fonts";
 import { ReactNode } from "react";
 import { ViewTransitions } from "next-view-transitions";
-import { getLocale, getMessages } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
 export const metadata: Metadata = {

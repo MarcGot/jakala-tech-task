@@ -1,8 +1,8 @@
 "use client";
 
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useTransition } from "react";
-import { Search, Loader2 } from "lucide-react";
+import { Loader2, Search } from "lucide-react";
 import { useDebouncedCallback } from "use-debounce";
 import { QueryManager } from "@/utils/query-manager";
 

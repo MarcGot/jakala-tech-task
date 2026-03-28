@@ -1,4 +1,4 @@
-import {DM_Sans, Nunito_Sans} from "next/font/google";
+import { DM_Sans, Nunito_Sans } from "next/font/google";
 
 const nunitoSans = Nunito_Sans({
     variable: "--font-nunito-sans",
@@ -10,4 +10,4 @@ const dmSans = DM_Sans({
     subsets: ["latin"],
 });
 
-export {nunitoSans, dmSans};
+export { nunitoSans, dmSans };
