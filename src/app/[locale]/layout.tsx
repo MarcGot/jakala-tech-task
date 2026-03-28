@@ -29,7 +29,7 @@ export default async function RootLayout({
                     lang={locale}
                     className={`${nunitoSans.variable} ${dmSans.variable} bg-background h-full antialiased`}
                 >
-                    <body className="m-auto flex min-h-full max-w-360 flex-col px-12 pt-20">
+                    <body className="m-auto flex min-h-full max-w-360 flex-col px-4 pt-20 md:px-8 lg:px-10">
                         <Header />
                         {children}
                     </body>

@@ -39,7 +39,7 @@ async function FlowerSection({ flower, id }: { flower: Flower; id: string }) {
                         <li>{t("description.fertilizer", { type: flower.fertilizerType })}</li>
                     </ul>
 
-                    <Button className="mt-8" size="lg">
+                    <Button className="mt-8 w-full md:w-auto" size="lg">
                         {t("addToCart")}
                     </Button>
                 </div>
