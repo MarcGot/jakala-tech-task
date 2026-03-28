@@ -1,0 +1,18 @@
+{
+  "global": {
+    "homepage": "Inicio"
+  },
+  "searchBar": {
+    "searchPlaceholder": "Busca en nuestra tienda"
+  },
+  "flowerCard": {
+    "new": "Nuevo"
+  },
+  "flowerDetails": {
+    "addToCart": "Añadir al carrito",
+    "description" : {
+      "watering": "Regar {count, plural, =1 {# vez} other {# veces}} por semana",
+      "fertilizer": "Fertilizar con {type}"
+    }
+  }
+}
