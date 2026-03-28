@@ -23,8 +23,8 @@ const Header = () => {
     return (
         <header
             className={cn(
-                "fixed top-0 left-0 z-50 flex h-20 w-full items-center bg-white px-8 transition-transform duration-300",
-                "flex w-full flex-col items-center justify-center",
+                "fixed top-0 left-0 z-50 flex h-20 w-dvw items-center bg-white px-8 transition-transform duration-300",
+                "flex flex-col items-center justify-center",
                 isVisible ? "translate-y-0" : "-translate-y-full",
             )}
         >
