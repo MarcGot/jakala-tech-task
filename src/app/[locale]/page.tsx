@@ -8,8 +8,6 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
     const params = await searchParams;
     const search = params.search || "";
 
-    console.log("search", search);
-
     return (
         <main className={"flex w-full flex-col items-center gap-8 py-20"}>
             <SearchBar />
