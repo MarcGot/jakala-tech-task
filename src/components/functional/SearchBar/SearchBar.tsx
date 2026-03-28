@@ -10,7 +10,7 @@ function SearchBar() {
     const searchParams = useSearchParams();
     const pathname = usePathname();
     const { replace } = useRouter();
-    const [isPending, startTransition] = useTransition();
+    const [isPending] = useTransition();
 
     const handleSearch = useDebouncedCallback((term: string) => {
         const newQuery = QueryManager.createUrl(searchParams, { search: term });
